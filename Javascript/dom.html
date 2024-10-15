@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>heading</h1>
+    <button onclick="abc()">Click Here to add a paragraph</button>
+    <div id="d1"></div>
+
+    <script>
+        function abc(){
+            const childem = document.createElement('p');
+            childem.innerHTML = "Newly Created Paragraph"
+            parentElm = document.getElementById("d1");
+            parentElm.appendChild(childem);
+        }
+    </script>
+</body>
+</html>

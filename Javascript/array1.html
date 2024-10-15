@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let arr=[10,20]
+
+        function fun(a,arr){
+            a=20;
+            arr[0] = 100;
+            arr[1] = 200;
+        }
+        fun(a,arr)
+        document.write(`Value of a: ${a}<br>`)
+        document.write(`Value of array: ${arr}`)
+    </script>
+    <br>
+    <script>
+        let b=10;
+        let arr1=[10,20]
+
+        function fun(b,arr1){
+            b=20;
+            arr1[0] = 100;
+            arr1[1] = 200;
+        }
+        fun(b,arr1.slice())
+        document.write(`Value of b: ${b}<br>`)
+        document.write(`Value of array: ${arr1}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display(name){
+            return `Welcome Mr./Ms. ${name}`
+        }
+        console.log(display("Gopal"))
+
+        const display1 = function(name){
+            return `Welcome Mr./Ms. ${name}`
+        }
+        console.log(display1("Ram"))
+
+        //Arrow function
+        const display3 = (name)=> {
+            return `Welcome Mr./Ms. ${name}`
+        } 
+        abc = display3;
+        console.log(abc("Arrow Function"))
+    </script>
+    <script>
+        let name = ['Ram','Lal','Bal','Shaam']
+
+        let abc = name.map((name1)=>{
+            document.write(`<h1>Name is : ${name1}</h1>`)
+        })
+    </script>
+</body>
+</html>
