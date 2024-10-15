@@ -43,13 +43,32 @@
     <h4>Pattern-2:</h4>
     <script>
         let n1=4;
-        for(row=1; row<=n; row++){
+        for(row=1; row<=n1; row++){
 
-            for(col=1; col<=2*n-1; col++){
+            for(col=1; col<=2*n1-1; col++){
 
-                if(col>=n-row+1 && col<=n+row-1){
+                if(col>=n1-row+1 && col<=n1+row-1){
                     document.write("*")
                 }else {
+                    document.write(`&nbsp;&nbsp`)
+                }
+            }
+            document.write("<br>")
+        }
+    </script>
+    <h4>Pattern-3:</h4>
+    <script>
+        let n2=5;
+        for(row=1; row<=n2; row++){
+
+            for(col=1; col<=n2; col++){
+
+                if(row == 1 || row == n2){
+                    document.write("*")
+                }
+                else if(col == n2-row+1){
+                    document.write("*")
+                }else{
                     document.write(`&nbsp;&nbsp`)
                 }
             }
